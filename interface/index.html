@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <title>Citadel Guard</title>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<h1 style="text-align: center;">Citadel Guard</h1>   
+<h3 style="text-align: center;">Attack Surveillence and prediction system</h3> 
+
+<p id="map-frame"></p>
+<p id="other-values"></p>
+<script>
+let lat;
+let lon;
+const ip = "123.10.100.91";
+let timestamp = Date();
+$(document).ready(function() {
+    $.ajax({
+        url: "http://ip-api.com/json/"+ ip
+    }).then(function(data) {
+        console.log(data)
+        lat = data.lat;
+        lon = data.lon;
+        document.getElementById("map-frame").innerHTML = '<iframe width="1500" height="500" src="https://maps.google.com/maps?q='+lat+','+lon+'&hl=es&z=14&amp;output=embed"></iframe>';
+        document.getElementById("other-values").innerHTML = "ISP: "+ data.isp+"<br/> City: "+ data.city+"<br/> Region Name: "+ data.regionName+"<br/> IP: "+ data.query+"<br/> Timestamp: "+ timestamp;
+    });
+});
+</script>
+
+</body>
+</html>

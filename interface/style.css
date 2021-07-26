@@ -1,0 +1,14 @@
+body{
+    background-color:brown;
+}
+h1{
+    background-color: cornsilk;
+}
+h3{
+    background-color: cornsilk;
+}
+p{
+    background-color: white;
+    background-size:contain;
+    font-family: 'Times New Roman', Times, serif;
+}
