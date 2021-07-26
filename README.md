@@ -1,6 +1,10 @@
 # CitadelGuard
 Final Year Project (Machine Learning, Computer Networks, Web Development)
-
+<p align="center">
+<br>
+<img src="https://github.com/TalhaDotAsif/CitadelGuard/blob/main/Capture.PNG" width="800" />
+<br>
+</p> 
 Type: Research and Development (R&D)
 
 As with the collaboration with external organization, the primary aim of this project is to intercept malicious traffic over the network and write an appropriate **ensemble model** that will give relative prediciton over the severity of an attack. By the end of the term, the finalized product will be a running web based application that will displaying point of origin of an attack as well as the severity of it compared to other non malicious activities.
